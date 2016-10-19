@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Feng Wang's Home Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* The fixed navbar will overlay your other content, unless you add padding to the top of the body. */
+    body {
+      padding-top: 50px;
+      font-size: 18px;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+  .bg-grey {
+    background-color: #b3b3b3;
+  }
+  .vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+  }
+    
+  .carousel-inner img {
+      width: auto; /*100%; /* Set width to 100% */
+      min-height:300px;
+      max-height:300px;
+      margin-left: auto;
+      margin-right: 50%;
+  }
+    .carousel-indicators li {
+      background-color: #ffffff;
+      border-color: orange;
+    }
+    .carousel-indicators .active {
+      background-color: orange;
+    }
+    .carousel-caption {
+      max-width: 550px;
+      padding: 0 20px;
+      margin: 0 auto;
+      left: 50%;
+      text-align: center;
+      color: black;
+    }
+  .glyph-logo {
+   font-size: 150px;
+   color: #08aad2;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none;
+    }
+    body {
+      font-size: 14px;
+    }
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Feng Wang</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="./publications.html"><span class="glyphicon glyphicon-list-alt"></span> Publications <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="./publications.html">Soft Matter Physics</a></li>
+            <li><a href="./publications.html#Bioinformatics">Bioinformatics</a></li>
+            <li><a href="./publications.html#full-list">full list</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Codes <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://github.com/fengwangPhysics/MMICA">MMICA</a></li>
+            <li><a href="https://github.com/fengwangPhysics/resourceForSoftMatter">Soft Matter analysis tools</a></li>
+          </ul>
+        </li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/fig5f.png" alt="Image">
+        <div class="carousel-caption">
+          <h3>Coalescence of liquid nuclei</h3>
+          <p>When two nuclei grew and the distance between them was reduced, a liquid channel developed and facilitated their coalescence.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/twoStep.png" alt="Image">
+        <div class="carousel-caption">
+          <h3>Two-step nucleation mechanism in solid-solid phase transitions via a liquid intermediate phase</h3>
+          <p>due to that the energy of the solid/liquid interface is lower than that between solid phases.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/CellReports.png" alt="Image">
+        <div class="carousel-caption">
+          <h3>Detecting Microbial Dysbiosis Associated with Pediatric Crohn Disease Despite the High Variability of the Gut Microbiota</h3>
+        </div>      
+      </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<div id="About" class="container text-left" style="padding-top: 50px; margin-top: -50px; padding-bottom: 50px; color: #555555">
+<h1>About me</h1>
+<p>I am a fans of physics and math, especially statistical physics and complex systems. I'm fascinated by the rich collective behaviors of systems governed by simple rules of microscopic dynamics. Those help me to understand the nature and even the society. I'm interested in all aspects of statistical physics, such as phase transitions, kinetics, non-equilibrium processes, complex networks, and other many that I haven't deepen into, e.g. evolutionary dynamics, collective motions/patterns in biological systems. I prefer theoretical work and simulation than experiments, since I believe this can help to reach to more fundamental understandings and make experimental data meaningful.</p>
+
+<p>I also like history, and history-based video games, such as the Total War series, Mount & Blade. I am interested in how an empire thrives and collapses, and how to command a huge military troop in a battle field such as besieging a city or fighting in mountains. Now I am also playing Pokemon Go.</p>
+
+<p>Currently, I am a postdoctoral fellow working on simulation and theoretical modeling in soft matter physics and statistical mechanics in Prof. <a href="http://www.phys.ust.hk/yilong/">Yilong Han</a>'s group, in the Department of Physics, Hong Kong University of Science and Technology.</p>
+
+</div>
+
+<!-- Research interests -->
+<div id="Research interests" class="container text-left" style="padding-top: 50px; margin-top: -50px;">
+<h1>Research interests</h1>
+</div>
+
+<div class="container bg-grey"  style="padding:20px;">
+  <div class="row">
+    <div class="col-sm-8 vcenter">
+      <h3><strong>Kinetics of phase transitions</strong></h3>
+      <p>Phase transitions happens in our daily life: melting, boiling, etc. Equilibrium statistical mechanics teaches us when a phase transition may happen and the initial and finial phases of the system, however, it tells nothing on how the transition happens, especially for first order transitions. Understanding of those transition kinetics has not only great important applications in industry, but also helps to obtain a complete theory on many-body systems.</p>
+      <p>Currently, I am working on the crystal melting process in Prof. Yilong Han's group. I conduct theoretical calculations as well as event-driven molecular dynamics (EDMD) simulations to address the question on how a hard sphere crystal melts and when a superheated crystal melts immediately without following a nucleation pathway.</p>
+    </div><!-- This part is important -- without them, the figure will go to next line.
+    --><div class="col-sm-4 vcenter">
+      <img src="images/pathway.svg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div>
+
+<div class="container" style="padding:20px;">
+  <div class="row">
+    <div class="col-sm-4 vcenter">
+      <img src="images/HMP.png" class="img-responsive" style="width:100%" alt="Image">
+      <p style="font-size:14px">The most famous study on the microbiome is the celebrated <a href="https://en.wikipedia.org/wiki/Human_Microbiome_Project">Human Microbiome Project</a> (HMP). The collected data is open and can be found on its <a href="http://hmpdacc.org/">official websites</a>.</p>
+    </div><!-- This part is important -- without them, the figure will go to next line.
+    --><div class="col-sm-8 vcenter">
+      <h3><strong>Microbial communities and their relation to human health</strong></h3>
+      <p>10<sup>11</sup> (100 billion) microbes are living in our human body, and most of them are in our gut. This number is 10 times more than human cells, and more importantly, the gene diversity is about 100 times than human. Those microbes form huge ecological communities, perform very complex metabolic functions and interact with our human cells. Recently developed next-generation sequencing technique enables us to reveal both the members of this huge community as well as its functions and impact on our human health. For example, it is found that the microbes are related or contributing to <a href="http://www.nature.com/nrmicro/journal/v11/n9/full/nrmicro3089.html">obesity</a>, <a href="http://www.nature.com/nature/journal/v455/n7216/full/nature07336.html">Type-1 diabetes</a>, <a href="http://dx.doi.org/10.1016/j.celrep.2015.12.088">inflammatory bowel disease</a>, <a href="http://www.nature.com/nature/journal/v518/n7540_supp/full/518S13a.html">some mental diseases</a>, and so on.</p>
+      <p>I am interested in applying <strong>ecological models</strong> (e.g. neutral models, GLV models), <strong>machine learning</strong> algorithms into the microbial community, to reveal its temporal dynamics, species-species ecological interaction, as well as their impact on human health, infant/child development, and aging of old people.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container bg-grey"  style="padding:20px;">
+  <div class="row">
+    <div class="col-sm-12">
+      <h3><strong>Random matrices with constraints</strong></h3>
+      <p>A matrix with all elements are independent identical random numbers follows a universal law -- <a href="https://en.wikipedia.org/wiki/Circular_law">Girko circular law</a> (1984) -- the eigenvalues of this kind of matrices are distributed uniformly over a disk on complex plane.</p>
+      <p>Imposing constraints can not only change the uniformness of eigenvalue distribution, but also the shape and topology of the distribution. For example, eigenvalue distribution of 10<sup>6</sup> randomly generated <a href="https://en.wikipedia.org/wiki/Sudoku">Sudoku</a> 9&times9 matrix shows a band gap structure on complex plane.</p>
+      <p>In application, those eigenvalue distributions are related to energy bands of disordered systems, phase transitions of disordered systems, stability of complex ecological system, etc. It could also be viewed as a mathematical art.</p>
+      <p>I am interested in exploring the eigenvalue distributions of various kinds of matrices, and trying to figure out the universal features of the distributions. It is also important to explore the localization of the corresponding eigenvectors, which is associated with the responds, information, or phase transition of the systems in applications.</p>
+    </div>
+    <div class="col-sm-8 vcenter">
+      <p>Here is a gallery of the eigenvalue distributions of some interesting matrices:</p>
+      <img src="images/randM.svg" class="img-responsive" style="width:90%" alt="Image">
+    </div><!-- This part is important -- without them, the figure will go to next line.
+    --><div class="col-sm-3 vcenter">
+      <img src="images/Sudoku.svg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-12">
+      <p><a href="http://nbviewer.jupyter.org/url/jakevdp.github.com/downloads/notebooks/SudokuCodeGolf.ipynb">http://nbviewer.jupyter.org/url/jakevdp.github.com/downloads/notebooks/SudokuCodeGolf.ipynb</a>
+provides a <strong>one-sentence</strong> Python function to solve Sudoku.
+    </div>
+  </div>
+</div>
+
+<!-- Others -->
+<div id="Name searched in google" class="container text-left" style="padding-top: 150px; margin-top: -50px;">
+<h1>Name searched in google</h1>
+  <div class="row">
+    <div class="col-sm-8 vcenter">
+      <p>My name, Feng Wang, is a very common name in Chinese, and also very common in academia. Searching my name with google, one can find a famous singer, several professors in University of California Berkeley (physics), University of Hong Kong (physics), University of Michigan (social science), etc. on the top page of the google's searching results.</p>
+      <p>It seems that my name is beyond the top 50 of <a href="https://en.wikipedia.org/wiki/Chinese_given_name">common Chinese names given in 2007</a>.</p>
+      <p>Anyway, it is almost impossible to find me by a google search. Frustrated...</p>
+    </div><!-- This part is important -- without them, the figure will go to next line.
+    --><div class="col-sm-3 vcenter">
+      <span class="glyphicon glyphicon-random glyph-logo"></span>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-left">
+  <p>Home Page of Feng Wang, 2016. Created with <a href="http://getbootstrap.com/">Bootstrap 3.3.6</a></p>
+</footer>
+
+</body>
+</html>
+
